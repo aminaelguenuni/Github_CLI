@@ -3,6 +3,11 @@ import requests
 #Github API
 from datetime import datetime, timedelta #work with dates
 
+print("Welcome to the GitHub Top Repo CLI!")
+print("You can run the script in two ways:")
+print("1. Default (last 7 days): python star.py")
+print("2. Custom date range: python main.py --start YYYY-MM-DD --end YYYY-MM-DD\n")
+
 BASE_URL = "https://api.github.com/search/repositories" #Github search repo API
 
 def fetch_repos(start_date=None, end_date=None): #function that gets the repos
@@ -14,7 +19,7 @@ def fetch_repos(start_date=None, end_date=None): #function that gets the repos
         start_date = (datetime.today() - timedelta(days=7)).strftime('%Y-%m-%d')
         date_range = f"{start_date}..{end_date}"
 
-    url = f"{BASE_URL}?q=created:{date_range}&sort=stars&order=desc&per_page=10"
+    url = f"{BASE_URL}?q=created:{date_range}&sort=stars&order=desc&per_page=5"
     response = requests.get(url) #send request to github
     response.raise_for_status() #Throws errors if needed
     return response.json() #covert from JSON to Python dictionary

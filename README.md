@@ -1,6 +1,6 @@
 # GitHub Top Repo CLI
 
-I built a Python command-line tool to fetch the **most starred GitHub repositories** created within a specified date range.  
+This is a Python command-line tool to fetch the **most starred GitHub repositories** created within a specified date range.  
 This tool is designed to help developers, researchers, and enthusiasts to quickly explore trending projects, discover innovative repositories, and keep track of popular projects in the GitHub ecosystem.  
 
 By providing a simple interface to query repositories by creation date and sort them by popularity, users can gain insights into emerging trends, popular programming languages, and open-source activity over time.
@@ -32,5 +32,6 @@ pip install requests
 ## Usage:
 - Default (7 days): python star.py
 - Custom date range: python star.py --start YYYY-MM-DD --end YYYY-MM-DD
+
 
 

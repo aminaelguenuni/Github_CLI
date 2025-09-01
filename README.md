@@ -1,7 +1,7 @@
 # GitHub Top Repo CLI
 
-We built a Python command-line tool to fetch the **most starred GitHub repositories** created within a specified date range.  
-This tool is designed to help developers, researchers, and enthusiasts quickly explore trending projects, discover innovative repositories, and keep track of popular projects in the GitHub ecosystem.  
+I built a Python command-line tool to fetch the **most starred GitHub repositories** created within a specified date range.  
+This tool is designed to help developers, researchers, and enthusiasts to quickly explore trending projects, discover innovative repositories, and keep track of popular projects in the GitHub ecosystem.  
 
 By providing a simple interface to query repositories by creation date and sort them by popularity, users can gain insights into emerging trends, popular programming languages, and open-source activity over time.
 
@@ -10,10 +10,9 @@ By providing a simple interface to query repositories by creation date and sort 
 ## Motivation
 
 With thousands of repositories being created on GitHub every day, it can be challenging to keep up with the most impactful projects.  
-This tool was created to bridge that gap, giving developers a quick way to see which projects are gaining traction and deserve attention.  
-It can also be used by students, educators, or anyone curious about the evolving landscape of software development.
+This tool was created to bridge that gap, giving developers a quick way to see which projects are gaining traction.
 
-We aimed to make the tool **easy to use**, **fast**, and **reliable**, while also providing optional support for authentication to avoid GitHub API limits.
+The tool is designed to be **easy to use**, **fast**, and **reliable**. 
 
 ---
 
@@ -22,8 +21,7 @@ We aimed to make the tool **easy to use**, **fast**, and **reliable**, while als
 - Fetch the **top 5 starred repositories** by default for the last 7 days.
 - Allow users to specify a **custom date range** for repository search.
 - Display repository **name**, **star count**, and **URL** for easy access.
-- Optional GitHub token support to increase API request limits.
-- Lightweight and portable, works on any machine with Python installed.
+- Lightweight, works on any machine with Python installed.
 
 ---
 
@@ -34,4 +32,5 @@ pip install requests
 ## Usage:
 - Default (7 days): python star.py
 - Custom date range: python star.py --start YYYY-MM-DD --end YYYY-MM-DD
+
 
